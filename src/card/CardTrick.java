@@ -28,24 +28,24 @@ public class CardTrick {
             magicHand[i] = c;
         }
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("Enter the value of your card (1-13): ");
-        int value = scanner.nextInt();
+        int value = input.nextInt();
         System.out.print("Enter the suit of your card (0-3): ");
-        int suit = scanner.nextInt();
-
-        Card userCard = new Card();
-        userCard.setValue(value);
-        userCard.setSuit(Card.SUITS[suit]);
-
+        int suit = input.nextInt();
+        
+        Card UserCard = new Card();
+        UserCard.setValue(value);
+        UserCard.setSuit(Card.SUITS[suit]);
+        
         boolean found = false;
         for (Card card : magicHand) {
-            if (card.equals(userCard)) {
+            if (card.equals(UserCard)) {
                 found = true;
                 break;
             }
         }
-
+        
         if (found) {
             System.out.println("Congratulations! Your card is in the magic hand.");
         } else {
