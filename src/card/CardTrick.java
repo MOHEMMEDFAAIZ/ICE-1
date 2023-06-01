@@ -28,10 +28,6 @@ public class CardTrick {
             magicHand[i] = c;
         }
         
-        Card LuckyCard = new Card();
-        LuckyCard.setValue(10);
-        LuckyCard.setSuit(Card.SUITS[2]);
-
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the value of your card (1-13): ");
         int value = input.nextInt();
@@ -44,7 +40,7 @@ public class CardTrick {
         
         boolean found = false;
         for (Card card : magicHand) {
-            if (card.getValue() == UserCard.getValue() && card.getSuit().equals(UserCard.getSuit())) {
+            if (UserCard.equals(UserCard)) {
                 found = true;
                 break;
             }
