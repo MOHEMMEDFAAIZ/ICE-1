@@ -47,9 +47,9 @@ public class CardTrick {
         }
         
         if (found) {
-            System.out.println("Congratulations! Your card is in the magic hand.");
+            System.out.println("Congratulations! Your card matched with the luckycard.");
         } else {
-            System.out.println("Oops! Your card is not in the magic hand.");
+            System.out.println("Oops! Your card doesn't matched with luckycard.");
         }
     }
 }
