@@ -18,9 +18,9 @@ import java.util.Scanner;
 public class CardTrick {
 
     public static void main(String[] args) {
-        Card LuckyCard =new Card();
-        LuckyCard.setValue(10);
-        LuckyCard.setSuit(Card.SUITS[2]);
+        Card luckyCard =new Card();
+        luckyCard.setValue(10);
+        luckyCard.setSuit(Card.SUITS[2]);
         Card[] magicHand = new Card[7];
 
         for (int i = 0; i < magicHand.length; i++) {
