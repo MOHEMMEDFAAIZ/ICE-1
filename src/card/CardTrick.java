@@ -18,11 +18,8 @@ import java.util.Scanner;
 public class CardTrick {
 
     public static void main(String[] args) {
-        Card luckyCard =new Card();
-        luckyCard.setValue(10);
-        luckyCard.setSuit("Spades");
         Card[] magicHand = new Card[7];
-
+        
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
             Random random = new Random();
