@@ -27,6 +27,10 @@ public class CardTrick {
             c.setSuit(Card.SUITS[random.nextInt(4)]);
             magicHand[i] = c;
         }
+        
+        Card LuckyCard = new Card();
+        LuckyCard.setValue(10);
+        LuckyCard.setSuit(Card.SUITS[2]);
 
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the value of your card (1-13): ");
@@ -34,13 +38,13 @@ public class CardTrick {
         System.out.print("Enter the suit of your card (0-3): ");
         int suit = input.nextInt();
         
-        Card UserCard = new Card();
-        UserCard.setValue(value);
-        UserCard.setSuit(Card.SUITS[suit]);
+//         Card UserCard = new Card();
+//         UserCard.setValue(value);
+//         UserCard.setSuit(Card.SUITS[suit]);
         
         boolean found = false;
         for (Card card : magicHand) {
-            if (card.getValue() == UserCard.getValue() && card.getSuit().equals(UserCard.getSuit())) {
+            if (card.getValue() == LuckyCard.getValue() && card.getSuit().equals(LuckyCard.getSuit())) {
                 found = true;
                 break;
             }
