@@ -43,7 +43,7 @@ public class CardTrick {
         
         boolean found = false;
         for (Card card : magicHand) {
-            if (card.equals(UserCard)) {
+            if (card.getValue() == UserCard.getValue() && card.getSuit().equals(UserCard.getSuit())) {
                 found = true;
                 break;
             }
