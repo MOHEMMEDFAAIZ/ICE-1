@@ -49,7 +49,7 @@ public class CardTrick {
         if (found) {
             System.out.println("Congratulations! Your card matched with the luckycard.");
         } else {
-            System.out.println("Oops! Your card doesn't matched with luckycard.");
+            System.out.println("Oops! Your card doesn't matched with the luckycard.");
         }
     }
 }
