@@ -38,13 +38,13 @@ public class CardTrick {
         System.out.print("Enter the suit of your card (0-3): ");
         int suit = input.nextInt();
         
-//         Card UserCard = new Card();
-//         UserCard.setValue(value);
-//         UserCard.setSuit(Card.SUITS[suit]);
+        Card UserCard = new Card();
+        UserCard.setValue(value);
+        UserCard.setSuit(Card.SUITS[suit]);
         
         boolean found = false;
         for (Card card : magicHand) {
-            if (card.getValue() == LuckyCard.getValue() && card.getSuit().equals(LuckyCard.getSuit())) {
+            if (card.getValue() == UserCard.getValue() && card.getSuit().equals(UserCard.getSuit())) {
                 found = true;
                 break;
             }
